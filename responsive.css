@@ -1,0 +1,328 @@
+/* Extra large screens */
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1320px;
+    }
+}
+
+/* Large screens */
+@media (max-width: 1200px) {
+    section {
+        padding: 60px 15px;
+    }
+
+    .section-header h2 {
+        font-size: 2.5rem;
+    }
+
+    .hero-title {
+        font-size: 3.5rem;
+    }
+}
+
+/* Tablets */
+@media (max-width: 992px) {
+    .nav-container {
+        padding: 1rem 15px;
+    }
+
+    .nav-menu {
+        gap: 1.5rem;
+    }
+
+    .hero {
+        min-height: 70vh;
+        padding: 40px 15px;
+    }
+
+    .hero-title {
+        font-size: 3rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+
+    .section-header h2 {
+        font-size: 2.2rem;
+    }
+
+    .about-grid,
+    .services-grid,
+    .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .about-card,
+    .service-card {
+        padding: 30px;
+    }
+}
+
+/* Small tablets and large phones */
+@media (max-width: 768px) {
+    .nav-brand {
+        font-size: 1.3rem;
+    }
+
+    .nav-logo-icon {
+        width: 28px;
+        height: 28px;
+    }
+
+    .nav-toggle {
+        display: flex !important;
+    }
+
+    .nav-menu {
+        position: fixed;
+        top: 60px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        background: white;
+        padding: 20px;
+        gap: 1rem;
+        box-shadow: var(--shadow-md);
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+        z-index: 999;
+    }
+
+    .nav-menu.active {
+        max-height: 500px;
+    }
+
+    section {
+        padding: 50px 15px;
+    }
+
+    .hero {
+        min-height: 60vh;
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .section-header h2 {
+        font-size: 2rem;
+    }
+
+    .section-subtitle {
+        font-size: 1rem;
+    }
+
+    .about-grid,
+    .services-grid,
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .about-card,
+    .service-card {
+        padding: 25px;
+    }
+
+    .contact-form {
+        gap: 15px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        padding: 12px 15px;
+        font-size: 16px; /* Prevents zoom on iOS */
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
+
+/* Small phones */
+@media (max-width: 576px) {
+    .container {
+        padding: 0 10px;
+    }
+
+    .nav-container {
+        padding: 0.8rem 10px;
+    }
+
+    .nav-brand {
+        font-size: 1.1rem;
+    }
+
+    .nav-logo-icon {
+        width: 24px;
+        height: 24px;
+    }
+
+    .hero {
+        min-height: 50vh;
+        padding: 30px 10px;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 0.95rem;
+        margin-bottom: 25px;
+    }
+
+    .btn {
+        padding: 12px 30px;
+        font-size: 0.9rem;
+    }
+
+    section {
+        padding: 40px 10px;
+    }
+
+    .section-header {
+        margin-bottom: 40px;
+    }
+
+    .section-header h2 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+    .section-subtitle {
+        font-size: 0.95rem;
+    }
+
+    .about-card,
+    .service-card {
+        padding: 20px;
+    }
+
+    .card-icon {
+        font-size: 2.5rem;
+        margin-bottom: 15px;
+    }
+
+    .about-card h3,
+    .service-card h3 {
+        font-size: 1.2rem;
+    }
+
+    .service-icon {
+        font-size: 2rem;
+    }
+
+    .portfolio-image {
+        height: 250px;
+    }
+
+    .portfolio-info {
+        padding: 20px;
+    }
+
+    .portfolio-info h4 {
+        font-size: 1.1rem;
+    }
+
+    .info-item {
+        gap: 15px;
+    }
+
+    .info-icon {
+        font-size: 1.5rem;
+        min-width: 40px;
+    }
+
+    .info-item h4 {
+        font-size: 1rem;
+    }
+
+    .contact-form button {
+        width: 100%;
+    }
+
+    .footer {
+        padding: 40px 10px 15px;
+    }
+
+    .footer-content {
+        gap: 25px;
+    }
+
+    .footer-column h4 {
+        font-size: 1.1rem;
+    }
+}
+
+/* Very small phones */
+@media (max-width: 375px) {
+    .hero-title {
+        font-size: 1.7rem;
+    }
+
+    .section-header h2 {
+        font-size: 1.3rem;
+    }
+
+    .btn {
+        padding: 10px 25px;
+        font-size: 0.85rem;
+    }
+
+    .about-card h3,
+    .service-card h3 {
+        font-size: 1.1rem;
+    }
+}
+
+/* Landscape orientation adjustments */
+@media (max-height: 600px) and (orientation: landscape) {
+    .hero {
+        min-height: 100vh;
+        padding: 30px 20px;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    section {
+        padding: 30px 15px;
+    }
+}
+
+/* Print styles */
+@media print {
+    .navbar,
+    .footer,
+    .contact-form {
+        display: none;
+    }
+
+    body {
+        background: white;
+    }
+
+    section {
+        page-break-inside: avoid;
+        box-shadow: none;
+    }
+}
